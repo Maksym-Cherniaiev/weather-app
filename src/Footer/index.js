@@ -1,9 +1,9 @@
 import React from 'react';
-import "./index.css";
+import "./index.sass";
 
 function Footer() {
   return (
-    <section className="about">
+    <footer className="about">
       <span className="about_author">ⒸLike-ran</span>
       <div className="about_links">
         <a className="links_icon" href="https://www.facebook.com/maksym.cherniaiev.9">
@@ -16,7 +16,7 @@ function Footer() {
           <i className="fab fa-github-square"></i>
         </a>
       </div>
-    </section>
+    </footer>
   );
 }
 
