@@ -1,0 +1,33 @@
+h2, h3 {
+  margin: 0;
+  text-align: center;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 38px;
+  margin-top: 40px;
+}
+
+.city {
+  font-size: 80px;
+  margin-top: 60px;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  background-color: #f6f6f6;
+}
