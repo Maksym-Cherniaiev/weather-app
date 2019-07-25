@@ -1,10 +1,8 @@
 import React from "react";
 
-function City(props) {
+function City( props ) {
   return (
-    <h2>
-      { props.city }
-    </h2>
+    <h2>{ props.name }</h2>
   );
 }
 

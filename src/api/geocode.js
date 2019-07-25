@@ -41,8 +41,8 @@ const Position = {
         "formatted_address" : "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
         "geometry" : {
            "location" : {
-              "lat" : 37.4224764,
-              "lng" : -122.0842499
+              "lat" : 49.74,
+              "lng" : 23.92
            },
            "location_type" : "ROOFTOP",
            "viewport" : {

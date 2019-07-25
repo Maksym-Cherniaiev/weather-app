@@ -1,10 +1,10 @@
 import React from "react";
 
-function Temp(props) {
+function Temp({temp_c, temp_f}) {
   return (
     <section className="temp">
-      <span className="temp_current">tempereture: { props.temp }</span>
-      <span className="temp_feel">feels like: { props.temp_min }</span>
+      <span className="temp_current">tempereture C: { temp_c }</span>
+      <span className="temp_feel">tempereture F: { temp_f }</span>
     </section>
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 
-function Extra( props ) {
+function Extra({humidity, condition, pressure}) {
   return (
     <section className="extra">
-      <span className="extra_humidity">humidity: { props.humidity }</span>
-      <span className="extra_visibility">visibility:</span>
-      <span className="extra_pressure">pressure: { props.pressure }</span>
+      <span className="extra_humidity">humidity: { humidity }</span>
+      <span className="extra_visibility">condition: { condition }</span>
+      <span className="extra_pressure">pressure: { pressure }</span>
     </section>
   );
 }
