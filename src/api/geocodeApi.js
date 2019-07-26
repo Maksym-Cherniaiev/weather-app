@@ -1,8 +1,16 @@
-import get from "lodash.get";
-import Position from "./geocode";
+import axios from "axios";
 
-function getLocationByCity() {
-  return get(Position, "results[0].geometry.location", null);
+function getLocationByCityName(userValue) {
+  let location = {};
+  return axios.get(`http://api.geonames.org/searchJSON?q=${userValue}&maxRows=1&username=likeran&featureClass=P`)
+  .then(result => {
+    const {lat, lng} = result.data.geonames[0];
+    location = {
+      lat,
+      lng
+    }
+    return location;
+  })
 }
 
-export default getLocationByCity;
+export default getLocationByCityName;

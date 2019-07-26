@@ -1,12 +1,23 @@
 main 
+  width: 80%
   flex: 1 0 auto
+  display: flex
+  align-self: center
+  flex-direction: column
 
 h2, h3 
   margin: 0
   text-align: center
+  font-size: 4rem
 
 span 
   font-size: 2rem
+
+hr
+  width: 90%
+
+.extra span 
+  padding-left: 50px
 
 .title 
   font-size: 38px
@@ -24,7 +35,29 @@ span
 .extra 
   display: flex
   flex-direction: column
-  width: 60%
-  margin: auto
-  padding: 30px
-  background-color: #f6f6f6
+  width: 90%
+  align-self: center
+  padding: 30px 0
+  background-color: #f8f8f8
+
+@media (max-width: 1280px)
+  main
+    width: 80%
+  .extra
+    width: 70%
+
+@media (max-width: 1024px)
+  .temp
+    flex-direction: column
+    align-items: center
+  .extra span 
+    font-size: 20px
+    padding-left: 35px
+
+@media (max-width: 768px)
+  main
+    width: 100%
+
+@media (max-width: 425px)
+  .extra
+    width: 100%
