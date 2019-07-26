@@ -8,7 +8,6 @@ function getUserLocation() {
  return getCurrentLocation()
  .then(position => {
    let location = {};
-   debugger;
    const {latitude: lat, longitude: lng} = position.coords;
    location = {
      lat,

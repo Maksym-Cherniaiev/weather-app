@@ -12,7 +12,6 @@ class WeatherInfo extends React.Component {
   constructor() {
     super();
     this.userCity = "";
-    // this.currentLocation = getCurrentLocation();
     this.state = {
       weatherData: {}
     }
@@ -24,7 +23,6 @@ class WeatherInfo extends React.Component {
       cityLocation = await getLocationByCityName(this.userCity);
     } else if (this.userCity === "") {
       cityLocation = await getUserLocation();
-      debugger;
     }
     return cityLocation;
   }

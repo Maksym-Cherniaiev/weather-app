@@ -6,7 +6,7 @@ import WeatherInfo from "./render-weather-info";
 function Main() {
   return (
     <main>
-      <h3 className="title">current weather</h3>
+      <h3 className="title">current weather in city</h3>
       <WeatherInfo />
     </main>
   );
