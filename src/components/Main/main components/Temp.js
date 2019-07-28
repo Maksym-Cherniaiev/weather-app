@@ -1,6 +1,6 @@
 import React from "react";
 
-function Temp({temp_c, temp_f}) {
+function Temp( {temp_c, temp_f} ) {
   return (
     <section className="temp">
       <span className="temp_current">tempereture C: { temp_c }</span>

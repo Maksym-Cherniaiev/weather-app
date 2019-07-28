@@ -1,8 +1,18 @@
 import React from "react";
 
-function City( props ) {
+function upperCity(name) {
+  if (typeof name === "string") {
+    return name.toUpperCase();
+  }
+}
+
+function City( {name, icon, alt} ) {
   return (
-    <h2>{ props.name }</h2>
+    <>
+      <h3 className="title">current weather in location</h3>
+      <h2>{ upperCity(name) }</h2>
+      <div className="weather-icon"><img src={ icon } alt={ alt }></img></div>
+    </>
   );
 }
 

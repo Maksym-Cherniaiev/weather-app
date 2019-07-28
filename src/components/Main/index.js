@@ -1,12 +1,11 @@
 import React from "react";
 import "./index.sass";
 
-import WeatherInfo from "./render-weather-info";
+import WeatherInfo from "./render-Main-components";
 
 function Main() {
   return (
     <main>
-      <h3 className="title">current weather in city</h3>
       <WeatherInfo />
     </main>
   );

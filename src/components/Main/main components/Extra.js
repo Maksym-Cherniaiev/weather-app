@@ -1,6 +1,6 @@
 import React from "react";
 
-function Extra({humidity, condition, pressure}) {
+function Extra( {humidity, condition, pressure} ) {
   return (
     <section className="extra">
       <span className="extra_humidity">humidity: { humidity }</span>

@@ -7,8 +7,13 @@ function getWeatherByLocation(location) {
   let weatherData = {};
   return axios.get(`${URL}?key=${apiKey}&q=${location.lat},${location.lng}`)
   .then(data => {
+    const {name} = data.data.location;
     const {temp_c, temp_f, humidity, pressure_mb: pressure, condition} = data.data.current;
-    weatherData.location = data.data.location.name;
+    weatherData.location = {
+      name,
+      icon: condition.icon,
+      alt: `current ${condition.icon.substring(16, 23)} in ${name}`
+    }
     weatherData.temp = {
       temp_c,
       temp_f
