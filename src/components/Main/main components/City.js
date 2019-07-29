@@ -11,7 +11,9 @@ function City( {name, icon, alt} ) {
     <>
       <h3 className="title">current weather in location</h3>
       <h2>{ upperCity(name) }</h2>
-      <div className="weather-icon"><img src={ icon } alt={ alt }></img></div>
+      <div className="weather-icon">
+        <img className="weather-icon_image" src={ icon } alt={ alt }></img>
+      </div>
     </>
   );
 }
