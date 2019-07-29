@@ -15,4 +15,4 @@ In order application to run on your local server:
 
     If you wish to stop the application, you should close the command-tool window.
 
-  #### `notice` - (geocode-api, witch I'm using for my app, uses http protocol, if you may have received a security message from your browser, please allow it to use unsafe scripts in order program to run correctly.)
+  #### `notice` - (geocode-api, which I'm using for my app, uses http protocol, if you may have received a security message from your browser, please allow it to use unsafe scripts in order program to run correctly.)
